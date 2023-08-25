@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams  } from 'next/navigation'
 import { ChangeEvent, DetailedHTMLProps, InputHTMLAttributes, useEffect, useState } from "react"
 
-export default () => {
+export default function Search() {
     const router = useRouter()
     const params: any = useSearchParams()
     const [Show, setShow] = useState<string>("")
